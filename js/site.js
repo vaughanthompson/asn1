@@ -97,6 +97,16 @@
 
     });
 
+    $('.mblnav a.inpage').click(function(){
+        $('#navClose').hide();
+        $('#navCart').show();
+        $('#navTrigger').show();
+        $("div.mblnavContainer").scrollTo(0);
+        $('div.mblnav').hide();
+        $('html, body').removeClass('noscroll');
+        return false;
+    });
+
 
     // slideNav
     $('#omniDrop').click(function(){

@@ -46,6 +46,10 @@ body > footer
     color: whiteAlp50
     padding-top: padM
     padding-bottom: padM
+    @media mtrigger
+        padding-left: padXL
+        padding-right:padXL
+        text-align: center
 body > footer a
     color: whiteAlp50 !important    
 body > footer img
@@ -53,6 +57,13 @@ body > footer img
 
 .picturefill-background
     overflow hidden
+    background-size: cover
+    background-position: 50% 50%
+.picturefill-background.containMob
+    @media mtrigger
+        background-size: contain
+        background-position: 50% 0
+        
 
 
 
@@ -74,7 +85,9 @@ div.content > section > div
     padding: padM
     padding-right: padL   
 *.fullH
-    min-height: fullH 
+    min-height: fullH
+    @media mtrigger
+        min-height: fullH - navSpacer
 *.largeH
     min-height: largeH
 *.halfH
@@ -158,8 +171,8 @@ div.content.cE
         border: none;
     div.picturefill-background div.content
         display: flex
-        align-items: flex-end
-        background-color: blackAlp25
+        //align-items: flex-end
+        //background-color: blackAlp25
     div.picturefill-background div.content section
         width:100%  
     .picturefill-background
@@ -457,7 +470,7 @@ div#carouselIndicator > div:first-child > div:first-child
     position: fixed
     z-index: 7000
     background-color: whiteAlp90
-    border-bottom:2px solid brand1
+    border-bottom:1px solid halfDark
     width:100vw
     padding-left: padM
     padding-right: padM 
@@ -506,7 +519,7 @@ div.containMNav h6
     font-size: 1em
     margin-top: marStd
     margin-bottom: marL
-@media ttrigger
+@media mtrigger
     html.noscroll 
         overflow: hidden 
     body.noscroll
@@ -575,16 +588,21 @@ a.itemLink:link, a.itemLink:visited
     transition: 0.35s
     color: brand0
     display: block
-a.itemLink:hover
-    transform: scale(103%)
+@media (pointer: fine)
+    a.itemLink:hover
+        transform: scale(103%)
 
-a.itemLink span
+a.itemLink span.thumbVid
     display: flex
     justify-content: center
     margin-bottom: marXS
     padding: padM*1.25
     background-size: cover
     background-repeat: no-repeat
+    @media mtrigger
+        height: 50vw
+        margin-bottom: marL
+
 a.itemLink span i 
     font-size:6em
     color: whiteAlp75
@@ -613,7 +631,9 @@ div.insetContent.alt
         flex: 1 1 auto
     div.gridItems div.item
         flex-basis: 44%
-
+@media mtrigger
+     div.gridItems div.item
+        margin-bottom: marXL    
 
 
 div.sec2
@@ -658,3 +678,8 @@ div.sec4 h4,
 div.sec4 h5,
 div.sec4 h6
     color: sec4darker
+
+@media mtrigger
+    div.inpage-content .innerContent
+        padding: 0 padXL*1.1 padXL*2 padXL*1.1
+        padding-top: navSpacer * 1.25
