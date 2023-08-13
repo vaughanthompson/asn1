@@ -2094,7 +2094,7 @@ div.openingTitle {
 }
 @media screen and (min-width: 1500px) {
   div.openingTitle {
-    width: 50vw;
+    width: 40vw;
   }
 }
 div.parallaxMe {
@@ -2120,7 +2120,7 @@ div.parallaxMe.top {
 div.videoLayer {
   position: absolute;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   z-index: 10;
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -2128,7 +2128,7 @@ div.videoLayer {
   overflow: hidden;
 }
 div.videoLayer > div.centerInFrame > video {
-  height: 90vh;
+  height: 100vh;
   width: auto;
   margin: 0px auto;
 }
@@ -2139,7 +2139,7 @@ div.videoLayer > div.offsetTop {
   margin-top: -5vh;
 }
 div.videoLayer > div.offsetRight {
-  margin-left: 45vw;
+  margin-left: 50vw;
 }
 div.videoLayer > div.width-75 > video {
   width: 75vw;
