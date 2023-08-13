@@ -2118,15 +2118,46 @@ div.parallaxMe.top {
   z-index: 25;
 }
 div.videoLayer {
-  border: 1px solid #f00;
-  background-color: rgba(0,0,0,0.15);
   position: absolute;
   width: 100vw;
-  height: 70vh;
+  height: 90vh;
   z-index: 10;
   -webkit-align-self: flex-end;
   align-self: flex-end;
   -ms-flex-item-align: end;
+  overflow: hidden;
+}
+div.videoLayer > div.centerInFrame > video {
+  height: 90vh;
+  width: auto;
+  margin: 0px auto;
+}
+div.videoLayer > div.offsetBottom {
+  margin-top: 25vh;
+}
+div.videoLayer > div.offsetTop {
+  margin-top: -10vh;
+}
+div.videoLayer > div.offsetRight {
+  margin-left: 45vw;
+}
+div.videoLayer > div.width-75 > video {
+  width: 75vw;
+  height: auto;
+}
+div.videoLayer > div.width-100 > video {
+  width: 100vw;
+  height: auto;
+}
+div.videoLayer > div.alignRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 a:link,
 a:visited {

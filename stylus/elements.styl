@@ -658,10 +658,38 @@ div.parallaxMe.top
 
 
 div.videoLayer
-    border: 1px solid red
-    background-color: rgba(0,0,0,0.15)
     position: absolute
     width: 100vw
-    height: 70vh
+    height: 90vh
     z-index: 10
     align-self: flex-end
+    overflow: hidden
+
+div.videoLayer > div
+    //border:1px solid blue
+    
+div.videoLayer > div.centerInFrame > video   
+    height: 90vh
+    width: auto
+    margin: 0px auto
+
+div.videoLayer > div.offsetBottom
+    margin-top: 25vh
+
+div.videoLayer > div.offsetTop
+    margin-top: -10vh
+
+div.videoLayer > div.offsetRight
+    margin-left: 45vw
+
+div.videoLayer > div.width-75 > video
+    width: 75vw
+    height: auto
+
+div.videoLayer > div.width-100 > video
+    width: 100vw
+    height: auto
+
+div.videoLayer > div.alignRight
+    display: flex
+    justify-content: flex-end

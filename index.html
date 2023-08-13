@@ -171,7 +171,13 @@
                 <div class="parallaxMe base ukiyo" style="background-image: url(/images/parallax/default-base.png);position: absolute; " data-u-scale="1.75" data-u-speed="0.4" ></div>
 
                 <div class="videoLayer">
-                    video placeholder
+                    <div class="offsetTop offsetRight width-100">
+                        <video id="bgvid" class="hidden-xs" autoplay muted>
+                            <source type="video/webm" data-src="/videos/AIIA_Gfx_Sphere-1_1920x1920_30-000_HEVCwAlpha-vp9-chrome.webm" />
+                            <source type="video/mp4" data-src="/videos/AIIA_Gfx_Sphere-1_1920x1920_30-000_HEVCwAlpha-hevc-safari.mp4">
+                            
+                        </video>
+                    </div>
                 </div>
                 
 
@@ -482,7 +488,55 @@
         })
     </script>
     
+<!-- for bg video loop -->
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var bgv = document.getElementById("bgvid");
 
+        var visible = !!(bgv.offsetWidth ||
+        bgv.offsetHeight ||
+        bgv.getClientRects().length);
+
+        if (visible) {
+        var children = bgv.getElementsByTagName("source");
+            for (var i = 0; i < children.length; ++i) {
+            children[i].src = children[i].getAttribute("data-src");
+            }
+        }
+        //bgv.load();
+        // try to trigger this with waypoints
+        $('videoLayer').css('opacity','0');
+
+        new Waypoint({
+        element: document.getElementsByClassName('videoLayer'),
+        handler: function(direction) {
+            if (direction === 'down') {
+                bgv.load();
+                $('videoLayer').fadeTo(2500,'1.0');
+
+            }
+            else {
+                //
+                $('videoLayer').fadeTo(1000,'0');
+
+            }
+        },
+            offset: '50%'
+        })
+
+
+
+        var iterations = 1;
+        bgvid.addEventListener('ended', function () {
+            if (iterations < 20) {
+                this.currentTime = 0;
+                this.play();
+                iterations ++;
+            }
+        }, false);
+
+    });
+</script>
 
 
 
