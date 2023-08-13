@@ -513,19 +513,19 @@
         }
         //bgv.load();
         // try to trigger this with waypoints
-        $('videoLayer').css('opacity','0');
+        $('.videoLayer').css('opacity','0');
 
         new Waypoint({
         element: document.getElementsByClassName('videoLayer'),
         handler: function(direction) {
             if (direction === 'down') {
                 bgv.load();
-                $('videoLayer').fadeTo(2500,'1.0');
+                $('.videoLayer').fadeTo(3500,'1.0');
 
             }
             else {
                 //
-                $('videoLayer').fadeTo(1000,'0');
+                $('.videoLayer').fadeTo(1000,'0');
 
             }
         },
