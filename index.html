@@ -174,8 +174,9 @@
                     <div class="offsetTop offsetRight width-100">
                         <video id="bgvid" class="hidden-xs" autoplay muted>
                             <source type="video/webm" data-src="/videos/AIIA_Gfx_Sphere-1_1920x1920_30-000_HEVCwAlpha-vp9-chrome.webm" />
+                        </video>
+                        <video id="bgvidsafari" class="hidden-xs" autoplay muted>
                             <source type="video/mp4" data-src="/videos/AIIA_Gfx_Sphere-1_1920x1920_30-000_HEVCwAlpha-hevc-safari.mp4">
-                            
                         </video>
                     </div>
                 </div>
@@ -491,7 +492,14 @@
 <!-- for bg video loop -->
 <script type="text/javascript">
     window.addEventListener("load", function() {
-        var bgv = document.getElementById("bgvid");
+        if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+        {
+            var bgv = document.getElementById("bgvidsafari");
+        } else {
+            var bgv = document.getElementById("bgvid");
+        }
+        
+        
 
         var visible = !!(bgv.offsetWidth ||
         bgv.offsetHeight ||
@@ -535,7 +543,21 @@
             }
         }, false);
 
+        bgvidsafari.addEventListener('ended', function () {
+            if (iterations < 30) {
+                this.currentTime = 0;
+                this.play();
+                iterations ++;
+            }
+        }, false);
+
     });
+
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+        {
+            document.getElementsByTagName("BODY")[0].className += " safari";
+        }
+
 </script>
 
 

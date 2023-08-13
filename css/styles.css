@@ -2136,7 +2136,7 @@ div.videoLayer > div.offsetBottom {
   margin-top: 25vh;
 }
 div.videoLayer > div.offsetTop {
-  margin-top: -10vh;
+  margin-top: -5vh;
 }
 div.videoLayer > div.offsetRight {
   margin-left: 45vw;
@@ -2158,6 +2158,9 @@ div.videoLayer > div.alignRight {
   -o-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+body.safari div.videoLayer video#bgvid {
+  display: none;
 }
 a:link,
 a:visited {
