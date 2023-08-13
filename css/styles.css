@@ -2117,6 +2117,17 @@ div.parallaxMe.mid {
 div.parallaxMe.top {
   z-index: 25;
 }
+div.videoLayer {
+  border: 1px solid #f00;
+  background-color: rgba(0,0,0,0.15);
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  z-index: 10;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  -ms-flex-item-align: end;
+}
 a:link,
 a:visited {
   color: #e02226;
