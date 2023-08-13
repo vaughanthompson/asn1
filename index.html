@@ -536,7 +536,7 @@
 
         var iterations = 1;
         bgvid.addEventListener('ended', function () {
-            if (iterations < 30) {
+            if (iterations < 300) {
                 this.currentTime = 0;
                 this.play();
                 iterations ++;
@@ -544,7 +544,7 @@
         }, false);
 
         bgvidsafari.addEventListener('ended', function () {
-            if (iterations < 30) {
+            if (iterations < 300) {
                 this.currentTime = 0;
                 this.play();
                 iterations ++;
