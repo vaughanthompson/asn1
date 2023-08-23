@@ -1116,12 +1116,12 @@ div.insetContent {
 }
 @media screen and (min-width: 750px) {
   div.insetContent {
-    padding: 14vw 35vw 14vw 17.709999999999997vw;
+    padding: 14vw 17.709999999999997vw 14vw 35vw;
   }
 }
 @media screen and (min-width: 750px) {
   div.insetContent.alt {
-    padding: 14vw 17.709999999999997vw 14vw 35vw;
+    padding: 14vw 35vw 14vw 17.709999999999997vw;
   }
 }
 @media screen and (min-width: 750px) {
@@ -2680,15 +2680,15 @@ html {
 }
 .gradientsec2 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(158,134,196,0.6));
+  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(158,134,196,0.4));
 }
 .gradientsec3 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(115,182,198,0.6));
+  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(115,182,198,0.4));
 }
 .gradientsec4 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(128,186,120,0.6));
+  background: radial-gradient(circle at center, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(128,186,120,0.4));
 }
 .blur {
   -webkit-filter: blur(10px);
