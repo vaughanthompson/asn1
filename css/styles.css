@@ -2127,6 +2127,17 @@ div.videoLayer {
   -ms-flex-item-align: end;
   overflow: hidden;
 }
+div.videoLayerInContent {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 10;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  overflow: hidden;
+  left: 0;
+}
 div.videoLayer > div.centerInFrame > video {
   height: 100vh;
   width: auto;
@@ -2136,10 +2147,19 @@ div.videoLayer > div.offsetBottom {
   margin-top: 25vh;
 }
 div.videoLayer > div.offsetTop {
-  margin-top: -5vh;
+  margin-top: -25vh;
 }
 div.videoLayer > div.offsetRight {
   margin-left: 50vw;
+}
+div.videoLayer.videoLayerInContent > div.offsetLeft {
+  margin-left: -60vw;
+}
+div.videoLayer.videoLayerInContent > div.offsetRight {
+  margin-left: 60vw;
+}
+div.videoLayer > div.offsetLeft {
+  margin-left: -50vw;
 }
 div.videoLayer > div.width-75 > video {
   width: 75vw;
@@ -2159,7 +2179,10 @@ div.videoLayer > div.alignRight {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-body.safari div.videoLayer video#bgvid {
+body.safari div.videoLayer video#bgvid1,
+body.safari div.videoLayer video#bgvid2,
+body.safari div.videoLayer video#bgvid3,
+body.safari div.videoLayer video#bgvid4 {
   display: none;
 }
 a:link,
