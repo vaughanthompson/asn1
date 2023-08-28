@@ -1091,10 +1091,15 @@ a.itemLink span.thumbVid {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 750px) {
   a.itemLink span.thumbVid {
     height: 50vw;
     margin-bottom: 5vw;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  a.itemLink span.thumbVid {
+    height: 25vw;
   }
 }
 a.itemLink span i {
@@ -1114,12 +1119,12 @@ div.insetContent > div {
 div.insetContent {
   position: relative;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1100px) {
   div.insetContent {
     padding: 14vw 17.709999999999997vw 14vw 35vw;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1100px) {
   div.insetContent.alt {
     padding: 14vw 35vw 14vw 17.709999999999997vw;
   }
@@ -2084,9 +2089,17 @@ div.openingTitle {
   margin-right: 3vw;
   padding: 0 5vw 3vw 5vw;
 }
+@media screen and (max-width: 750px) {
+  div.openingTitle {
+    width: 75vw;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 11vh;
+  }
+}
 @media screen and (min-width: 750px) {
   div.openingTitle {
-    width: 55vw;
+    width: 65vw;
     margin-left: 0;
     margin-right: 0;
     margin-top: 11vh;
@@ -2094,7 +2107,7 @@ div.openingTitle {
 }
 @media screen and (min-width: 1500px) {
   div.openingTitle {
-    width: 40vw;
+    width: 50vw;
   }
 }
 div.parallaxMe {
@@ -2150,7 +2163,7 @@ div.videoLayer > div.offsetTop {
   margin-top: -25vh;
 }
 div.videoLayer > div.offsetRight {
-  margin-left: 50vw;
+  margin-left: 60vw;
 }
 div.videoLayer.videoLayerInContent > div.offsetLeft {
   margin-left: -60vw;
@@ -2307,13 +2320,12 @@ h6 {
 }
 h1 {
   font-weight: 700;
-  font-size: 4.2em;
+  font-size: 3.5em;
   line-height: 105%;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
 }
 h1 span {
   font-weight: 300;
-  letter-spacing: -0.02em;
 }
 h2 {
   font-weight: 600;

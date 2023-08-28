@@ -599,9 +599,12 @@ a.itemLink span.thumbVid
     padding: padM*1.25
     background-size: cover
     background-repeat: no-repeat
-    @media mtrigger
+    @media phoneRule
         height: 50vw
         margin-bottom: marL
+    @media tabletRule
+        height: 25vw
+   
 
 a.itemLink span i 
     font-size:6em
@@ -615,10 +618,10 @@ div.insetContent > div
     position: relative;
 div.insetContent
     position: relative;
-    @media ttrigger
+    @media dtrigger
         padding: padXL*2 padXL*2.53 padXL*2 padXL*5  
 div.insetContent.alt
-    @media ttrigger
+    @media dtrigger
         padding: padXL*2 padXL*5 padXL*2 padXL*2.53
 @media ttrigger
     div.gridItems
