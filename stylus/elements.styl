@@ -619,6 +619,21 @@ div.slideTextOverlay
 .darkSlider div.slideTextOverlay
     color: brand1
 
+@media mtrigger
+    div.containSlider,
+    div.slideTextOverlay.fullH 
+        height: auto
+        position: relative
+        padding-bottom: padL
+        background-blend-mode: multiply
+        background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
+    div.containSlider
+        background-image: url(/images/bgs/default-m.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+    
+
+
 
 div.openingTitle 
     //margin-top: navSpacer
