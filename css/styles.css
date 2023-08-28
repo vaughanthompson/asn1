@@ -2162,8 +2162,14 @@ div.videoLayer > div.offsetBottom {
 div.videoLayer > div.offsetTop {
   margin-top: -25vh;
 }
+div.videoLayer > div.offsetTop2 {
+  margin-top: -12.5vh;
+}
 div.videoLayer > div.offsetRight {
   margin-left: 60vw;
+}
+div.videoLayer > div.offsetRight2 {
+  margin-left: 40vw;
 }
 div.videoLayer.videoLayerInContent > div.offsetLeft {
   margin-left: -60vw;
@@ -2174,8 +2180,15 @@ div.videoLayer.videoLayerInContent > div.offsetRight {
 div.videoLayer > div.offsetLeft {
   margin-left: -50vw;
 }
+div.videoLayer > div.offsetLeft2 {
+  margin-left: -20vw;
+}
 div.videoLayer > div.width-75 > video {
   width: 75vw;
+  height: auto;
+}
+div.videoLayer > div.width-65 > video {
+  width: 65vw;
   height: auto;
 }
 div.videoLayer > div.width-100 > video {
