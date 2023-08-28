@@ -2472,6 +2472,21 @@ p.intro {
     width: 80%;
   }
 }
+div.sec2 a.extLink:link,
+div.sec2 a.extLink:visited {
+  color: #7e62c4;
+  text-decoration: none;
+}
+div.sec3 a.extLink:link,
+div.sec3 a.extLink:visited {
+  color: #3b8996;
+  text-decoration: none;
+}
+div.sec4 a.extLink:link,
+div.sec4 a.extLink:visited {
+  color: #568e4c;
+  text-decoration: none;
+}
 
 input:focus {outline:none;}
 
