@@ -1550,6 +1550,9 @@ picture.logoAsset img {
   height: 70px;
   width: auto;
 }
+header.sticky picture.logoAsset img {
+  height: 60px;
+}
 header.sticky .imgText.stacked {
   -webkit-box-orient: horizontal;
   -o-box-orient: horizontal;
