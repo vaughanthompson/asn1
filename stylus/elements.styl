@@ -633,6 +633,7 @@ div.slideTextOverlay
         background-repeat: no-repeat
         background-size: cover
         padding-bottom: 0
+        background-color: brand0
 // need to add matchheight.js to force containSlider to
 // match height of containSlider at all breakpoints
 
@@ -654,12 +655,20 @@ div.openingTitle
         width: 75vw
         margin-left: 0
         margin-right: 0
-        margin-top: navHeightL
+        margin-top: marL
 @media lgdesktopRule
     div.openingTitle 
-         width: 70vw
+         width: 60vw
      div.openingTitle div > p
-        width: 80%
+        width: 90%
+
+body.darkTheme div.openingTitle 
+    color:white
+body.darkTheme div.openingTitle a.itemLink,
+body.darkTheme div.openingTitle a.itemLink p
+    color:white
+body.darkTheme div.openingTitle a.itemLink:hover > *
+    color:brand1
 
 
 
