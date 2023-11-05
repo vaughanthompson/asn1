@@ -606,7 +606,10 @@ a.itemLink span.thumbVid
     @media tabletRule
         height: 25vw
         margin-bottom: marM
-   
+div.gridItems.col4 div.item a.itemLink span.thumbVid
+    padding: padM padM*1.25
+    @media tabletRule
+        height: 15vw
 
 a.itemLink span i 
     font-size:6em
@@ -625,6 +628,9 @@ div.insetContent
 div.insetContent.alt
     @media dtrigger
         padding: padXL*2 padXL*5 padXL*2 padXL*2.53
+div.insetContent.center
+    @media dtrigger
+        padding: padXL*1.25 padXL*2 padXL*2 padXL*2
 @media ttrigger
     div.gridItems
         display: flex
@@ -636,11 +642,21 @@ div.insetContent.alt
         flex: 1 1 auto
     div.gridItems div.item
         flex-basis: 44%
+    div.gridItems.col4
+        column-gap: 0.5em
+    div.gridItems.col4 div.item
+        flex-basis: 22%
 @media mtrigger
      div.gridItems div.item
         margin-bottom: marXL    
+@media dtrigger
+    div.insetContent.center div.innerContent
+        text-align: center
+    div.insetContent.center div.innerContent p.intro
+        margin: 0px auto
 
-
+div.sec1
+    background-color: sec1mid
 div.sec2
     background-color: sec2mid
 div.sec3
@@ -656,7 +672,7 @@ div.sec1 h3,
 div.sec1 h4,
 div.sec1 h5,
 div.sec1 h6
-    color: sec2darker
+    color: sec1darker
 
 
 
