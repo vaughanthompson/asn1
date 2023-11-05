@@ -1,6 +1,6 @@
 // typo defaults
 a:link, a:visited
-    color: brand1
+    color: brand0
     text-decoration: none
 p a:link,
 p a:visited,
@@ -39,14 +39,15 @@ ul li
 *.picturefill-background a
     //text-decoration: underline
 
-
+nav a:link
+    color: white
 
 .activeLink, 
 nav a:hover,
 p a:hover,
 li a:hover,
 *.picturefill-background a:hover
-    color: brand3 !important
+    color: brand1 !important
     transition: 500ms
 .activeLink,
 nav a:hover
@@ -55,8 +56,8 @@ nav a:hover
 
 // nav typo
 nav > *
-    font-weight:500 !important
-    font-size:0.9em !important
+    font-weight:300 !important
+    font-size:1em !important
     padding: 0 padXXS*1.25
 
 /* dark slider nav */    
@@ -86,14 +87,14 @@ body.lightSlider > header.fixed nav a:hover
 /* dark theme navs */ 
 body.darkTheme > header.sticky .siteLogo span,
 body.darkTheme > header.sticky nav a.activeLink
-    color: brand2 !important
+    color: brand1 !important
 body.darkTheme > header.sticky nav a,
 body.darkTheme > header.sticky nav a.ctaButton
-    color: brand1 !important
-    border-color: brand1 !important    
-body.darkTheme > header.sticky nav a:hover
     color: white !important
-    border-color: white !important
+    border-color: white !important    
+body.darkTheme > header.sticky nav a:hover
+    color: brand1 !important
+    border-color: brand1 !important
 
 
 /* light theme navs */
@@ -102,11 +103,11 @@ body.lightTheme > header.sticky nav a.activeLink
     color: brand3 !important
 body.lightTheme > header.sticky nav a,
 body.lightTheme > header.sticky nav a.ctaButton
-    color: brand1 !important
-    border-color: brand1 !important    
+    color: brand0 !important
+    border-color: brand0 !important    
 body.lightTheme > header.sticky nav a:hover
-    color: brand3 !important
-    border-color: brand3 !important
+    color: brand1 !important
+    border-color: brand1 !important
 
 
 h1, h2, h3, h4 ,h5, h6
@@ -119,6 +120,7 @@ h1
     font-size: 3.5em
     line-height: 105%
     letter-spacing: -0.035em
+    color: brand1
 h1 span
     font-weight: 300
 h2
@@ -262,3 +264,14 @@ div.sec5 a.extLink:visited
 
 
 
+.openingTitle h5
+    font-size:1.2em
+    line-height: 1.2em
+    font-weight: 600
+
+.openingTitle div.item p
+    font-size: 95%
+    color: brand0
+
+div.item a:hover
+    color: brand3 !important

@@ -13,47 +13,47 @@
 
 
 // vars
-brand0 = rgba(38,47,114,1.0) //#
-brand1 = rgba(231,168,44,1.0) //#
-brand2 = rgba(252,193,82,1.0) //#fcc152
-brand3 = rgba(50,50,50,1.0) //#262f72
+brand0 = rgba(33, 33, 33,1.0) //#666666
+brand1 = rgba(245, 115, 0,1.0) //#f57300
+brand2 = rgba(102, 102, 102,1.0) //#666666
+brand3 = rgba(17,17,17,1.0) //#111111
 
 // sec1 - 
 sec1base = rgba(245,245,245.1.0)
 sec1mid = #E3E4E8
 sec1fore = rgba(229,229,229,1.0)
-sec1dark = rgba(38,47,114,1.0)
-sec1darker = rgba(14,25,81,1.0)
+sec1dark = #111111
+sec1darker = #666666s
 
 // sec2 - 
 sec2base = rgba(238,246,237.1.0)
-sec2mid = rgba(230,242,228,1.0)
+sec2mid = rgb(255, 230, 206)
 sec2fore = rgba(221,238,219,1.0)
-sec2dark = rgba(128,186,120,0.4)
-sec2darker = rgba(86,142,76,1.0)
+sec2dark = rgba(135, 53, 33, 0.2)
+sec2darker = #f57300
 
 
 
 // sec3 - 
 sec3base = rgba(233,247,254.1.0)
-sec3mid = rgba(211,238,247,1.0)
+sec3mid = rgb(247, 219, 211)
 sec3fore = rgba(200,234,245,1.0)
-sec3dark = rgba(115,182,198,0.4)
-sec3darker = rgba(59,137,150,1.0)
+sec3dark = rgba(122, 2, 34, 0.1)
+sec3darker = #ff4900
 
 // sec4 - 
 sec4base = rgba(243,238,247.1.0)
-sec4mid = rgba(241,235,249,1.0)
+sec4mid = rgb(234, 204, 184)
 sec4fore = rgba(237,230,247,1.0)
-sec4dark = rgba(158,134,196,0.4)
-sec4darker = rgba(126,98,196,1.0)
+sec4dark = rgba(170, 117, 0,0.2)
+sec4darker = #e08d14
 
 // sec5 - ????
 sec5base = rgba(252,247,232.1.0)
 sec5mid = rgba(252,248,232,1.0)
 sec5fore = rgba(232,216,133,1.0)
-sec5dark = rgba(214,191,95,0.4)
-sec5darker = rgba(183,156,41,1.0)
+sec5dark = rgba(135, 53, 33, 0.2)
+sec5darker = #fa6a45
 
 white = rgba(255,255,255,1.0)
 whiteAlp90 = rgba(255,255,255,0.9)
@@ -187,7 +187,9 @@ body
     background-color: mainBG
     color: brand0
 body > header.sticky
-    background-color: whiteAlp90
+    background-blend-mode: multiply
+    /*background: linear-gradient(to right, white,white,whiteAlp50)*/
+    background-color: brand0
 
 
 hr
@@ -198,3 +200,6 @@ hr
 .noPad
     padding: 0 !important
 // blend modes
+
+.brand1
+    color: brand1

@@ -189,8 +189,8 @@ header.sticky .imgText span.txtC
     //margin-right: 10px
 
 .imgText picture img
-    width: 100%
-    height: auto
+    //width: 100%
+    //height: auto
 
 .imgText.tall span.txtC
     justify-content: flex-end   
@@ -205,10 +205,11 @@ header.sticky .imgText span.txtC
     margin-bottom: 10px
 
 
-picture.logoAsset
-    width:120px
-    height:40px
-    
+picture.logoAsset img
+    height:70px
+    width:auto
+header.sticky picture.logoAsset img
+    height:60px
 
 header.sticky .imgText.stacked
     flex-direction: row
@@ -626,12 +627,13 @@ div.slideTextOverlay
         position: relative
         padding-bottom: padXL*2
         background-blend-mode: multiply
-        background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
+        //background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
     div.containSlider
-        background-image: url(/images/bgs/default-m.jpg)
+        background-image: url(/images/bgs/default-m.png)
         background-repeat: no-repeat
         background-size: cover
         padding-bottom: 0
+        background-color: brand0
 // need to add matchheight.js to force containSlider to
 // match height of containSlider at all breakpoints
 
@@ -644,19 +646,29 @@ div.openingTitle
     padding: 0 padL padM padL
 @media phoneRule
     div.openingTitle 
-        width: 75vw
+        width: 85vw
         margin-left: 0
         margin-right: 0
         margin-top: navHeightL
 @media ttrigger
     div.openingTitle 
-        width: 65vw
+        width: 75vw
         margin-left: 0
         margin-right: 0
-        margin-top: navHeightL
+        margin-top: marL
 @media lgdesktopRule
     div.openingTitle 
-         width: 50vw
+         width: 60vw
+     div.openingTitle div > p
+        width: 90%
+
+body.darkTheme div.openingTitle 
+    color:white
+body.darkTheme div.openingTitle a.itemLink,
+body.darkTheme div.openingTitle a.itemLink p
+    color:white
+body.darkTheme div.openingTitle a.itemLink:hover > *
+    color:brand1
 
 
 
