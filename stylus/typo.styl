@@ -46,8 +46,8 @@ nav a:hover,
 p a:hover,
 li a:hover,
 *.picturefill-background a:hover
-    color: brand3 !important
-    transition: 500ms
+    color: brand0 !important
+    transition: 400ms
 .activeLink,
 nav a:hover
     border-bottom-color: brand2 !important
@@ -99,14 +99,14 @@ body.darkTheme > header.sticky nav a:hover
 /* light theme navs */
 body.lightTheme > header.sticky .siteLogo span,
 body.lightTheme > header.sticky nav a.activeLink
-    color: brand3 !important
+    color: brand0 !important
 body.lightTheme > header.sticky nav a,
 body.lightTheme > header.sticky nav a.ctaButton
     color: brand1 !important
     border-color: brand1 !important    
 body.lightTheme > header.sticky nav a:hover
-    color: brand3 !important
-    border-color: brand3 !important
+    color: brand0 !important
+    border-color: brand0 !important
 
 
 h1, h2, h3, h4 ,h5, h6
@@ -116,24 +116,25 @@ h1, h2, h3, h4 ,h5, h6
 // defaults   
 h1
     font-weight: 700
-    font-size: 3.5em
+    font-size: 3.2em
     line-height: 105%
-    letter-spacing: -0.035em
+    letter-spacing: -0.02em
+    color: brand0
 h1 span
     font-weight: 300
 h2
     font-weight: 600
     font-size: 3.2em
     line-height: 105%
-    letter-spacing: -0.045em
+    letter-spacing: -0.01em
 h2 span
     font-weight: 300
-    letter-spacing: -0.015em    
+    //letter-spacing: -0.015em    
 h3
     font-weight: 600
     font-size: 2em
     line-height: 115%
-    letter-spacing: -0.035em
+    //letter-spacing: -0.035em
 h3 span
     font-weight: 300
     letter-spacing: -0.01em    
@@ -141,31 +142,31 @@ h4
     font-weight: 600
     font-size: 1.7em
     line-height: 120%
-    letter-spacing: -0.01em
+    //letter-spacing: -0.01em
 h4 span
     font-weight: 400    
 h5
     font-weight: 400
     font-size: 1.2em
     line-height: 125%
-    letter-spacing: -0.02em
+    //letter-spacing: -0.02em
 h5 span
     font-weight: 400
-    letter-spacing: -0.01em      
+    //letter-spacing: -0.01em      
 h6
     font-weight: 500
     font-size:1.2em
     line-height: 130%
-    letter-spacing: -0.015em
+    //letter-spacing: -0.015em
 p
     font-weight: 400
     font-size: 1em
     line-height: 1.35em
-    letter-spacing: -0.025em
+    //letter-spacing: -0.025em
     margin-top: 0em
 strong 
     font-weight: 800
-    letter-spacing: -0.015em
+    //letter-spacing: -0.015em
 
 // modify typo
 .small
@@ -234,7 +235,6 @@ body > footer h6
 
 p.intro
     width auto
-    color: brand3
     @media dtrigger
         width:80%
 
@@ -253,12 +253,3 @@ div.sec4 a.extLink:link,
 div.sec4 a.extLink:visited
     color: sec4darker
     text-decoration: none
-
-div.sec5 a.extLink:link, 
-div.sec5 a.extLink:visited
-    color: sec5darker
-    text-decoration: none
-
-
-
-

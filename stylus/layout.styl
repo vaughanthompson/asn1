@@ -30,7 +30,6 @@ body footer
         min-height: navHeightL
         position: absolute
         z-index: 2000
-        background-color: whiteAlp25
     body > header.sticky
         min-height: navHeight
         position: fixed
@@ -47,6 +46,8 @@ body > footer
     color: whiteAlp50
     padding-top: padM
     padding-bottom: padM
+    background-blend-mode: multiply
+    background: linear-gradient(120deg, #65231d,#65231d,#495056,#697583 )
     @media mtrigger
         padding-left: padXL
         padding-right:padXL
@@ -54,7 +55,7 @@ body > footer
 body > footer a
     color: whiteAlp50 !important    
 body > footer img
-    opacity 0.5
+    opacity 1.0
 
 .picturefill-background
     overflow hidden
@@ -606,10 +607,7 @@ a.itemLink span.thumbVid
     @media tabletRule
         height: 25vw
         margin-bottom: marM
-div.gridItems.col4 div.item a.itemLink span.thumbVid
-    padding: padM padM*1.25
-    @media tabletRule
-        height: 15vw
+   
 
 a.itemLink span i 
     font-size:6em
@@ -628,9 +626,6 @@ div.insetContent
 div.insetContent.alt
     @media dtrigger
         padding: padXL*2 padXL*5 padXL*2 padXL*2.53
-div.insetContent.center
-    @media dtrigger
-        padding: padXL*1.25 padXL*2 padXL*2 padXL*2
 @media ttrigger
     div.gridItems
         display: flex
@@ -642,36 +637,26 @@ div.insetContent.center
         flex: 1 1 auto
     div.gridItems div.item
         flex-basis: 44%
-    div.gridItems.col4
-        column-gap: 0.5em
-    div.gridItems.col4 div.item
-        flex-basis: 22%
 @media mtrigger
      div.gridItems div.item
         margin-bottom: marXL    
-@media dtrigger
-    div.insetContent.center div.innerContent
-        text-align: center
-    div.insetContent.center div.innerContent p.intro
-        margin: 0px auto
 
-div.sec1
-    background-color: sec1mid
+
 div.sec2
     background-color: sec2mid
 div.sec3
     background-color: sec3mid
 div.sec4
     background-color: sec4mid
-div.sec5
-    background-color: sec5mid
 
 div.sec1 h1,
 div.sec1 h2,
 div.sec1 h3,
 div.sec1 h4,
 div.sec1 h5,
-div.sec1 h6
+div.sec1 h6,
+div.sec1 p,
+div.sec1 a
     color: sec1darker
 
 
@@ -682,7 +667,7 @@ div.sec2 h3,
 div.sec2 h4,
 div.sec2 h5,
 div.sec2 h6
-    color: sec2darker
+    color: sec2dark
 
 
 div.sec3 h1,
@@ -691,7 +676,7 @@ div.sec3 h3,
 div.sec3 h4,
 div.sec3 h5,
 div.sec3 h6
-    color: sec3darker
+    color: sec3dark
   
 
 div.sec4 h1,
@@ -700,15 +685,7 @@ div.sec4 h3,
 div.sec4 h4,
 div.sec4 h5,
 div.sec4 h6
-    color: sec4darker
-
-div.sec5 h1,
-div.sec5 h2,
-div.sec5 h3,
-div.sec5 h4,
-div.sec5 h5,
-div.sec5 h6
-    color: sec5darker
+    color: sec4dark
 
 @media mtrigger
     div.inpage-content .innerContent
