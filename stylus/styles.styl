@@ -5,7 +5,7 @@
 // libs and default 3rd party
 @import 'nib'
 // setup
-@import '../fonts/poppins/poppinsCustom.css'
+@import '../fonts/Inter/interCustom.css'
 
 @require 'defaults.styl'
 // block, nav etc
@@ -67,14 +67,20 @@
     background: linear-gradient(to right, brand2, blackAlp50)
 .gradient2
     background-blend-mode: multiply
-    background: linear-gradient(to right bottom, black ,blackAlp50, blackAlp10)    
+    background: radial-gradient(circle at center, brand0 50%, blackAlp25)    
 .gradient3
     background-blend-mode: multiply
     background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
 .gradient4
     background-blend-mode: multiply
-    background: linear-gradient(120deg, rgba(192,0,0,0.5),rgba(192,0,0,0.35), rgba(141,164,181,0.3), rgba(121,144,161,0.8))
-    
+    background: linear-gradient(180deg, brand0 50%, brand1)
+.gradient5
+    background-blend-mode: multiply
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.0), blackAlp50)  
+.gradient6
+    background-blend-mode: multiply
+    background: linear-gradient(to bottom left, rgba(0,0,0,0.0), blackAlp50)      
+
 .gradientsec2
     background-blend-mode: multiply
     background: linear-gradient(120deg,sec2darker, blackAlp10, blackAlp5, blackAlp5 )

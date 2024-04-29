@@ -1,6 +1,6 @@
 //core layout
 body footer
-    border-top: 1px solid lightGrey
+    //border-top: 1px solid lightGrey
 @media ttrigger
     main, div#priNav-v2, div#priNav, div#secNav, body > footer, div#carouselIndicator, div#slideNav
         padding-left: padL    
@@ -24,12 +24,13 @@ body footer
         justify-content: space-between
         align-items: center
         flex-wrap: wrap
-        padding: padXXS 0
+        padding: padXXS*0.5 0
         width:100%
     body > header.fixed
-        min-height: navHeightL
+        //min-height: navHeightL
         position: absolute
         z-index: 2000
+        border-bottom: 1px solid white;
     body > header.sticky
         min-height: navHeight
         position: fixed
@@ -42,18 +43,18 @@ body footer
         margin-right: marStd*1.5
 
 body > footer
-    background-color: brand3
-    color: whiteAlp50
-    padding-top: padM
-    padding-bottom: padM
-    background-blend-mode: multiply
-    background: linear-gradient(120deg, #65231d,#65231d,#495056,#697583 )
+    background-color: brand2
+    color: white
+    padding-top: padL
+    padding-bottom: padL
+    /*background-blend-mode: multiply
+    background: linear-gradient(120deg, #65231d,#65231d,#495056,#697583 )*/
     @media mtrigger
         padding-left: padXL
         padding-right:padXL
         text-align: center
 body > footer a
-    color: whiteAlp50 !important    
+    color: white !important    
 body > footer img
     opacity 1.0
 
@@ -588,7 +589,7 @@ main.featurette article:last-child
 
 a.itemLink:link, a.itemLink:visited  
     transition: 0.35s
-    color: brand3
+    color: white
     display: block
 @media (pointer: fine)
     a.itemLink:hover
@@ -658,11 +659,15 @@ div.insetContent.alt
 
 
 div.sec2
-    background-color: sec2mid
+    background-color: brand1
 div.sec3
-    background-color: sec3mid
+    background-color: brand2
 div.sec4
-    background-color: sec4mid
+    background-color: brand3
+div.sec5
+    background-color: brand4
+div.sec6
+    background-color: brand5
 
 div.sec1 h1,
 div.sec1 h2,
@@ -672,7 +677,7 @@ div.sec1 h5,
 div.sec1 h6,
 div.sec1 p,
 div.sec1 a
-    color: sec1darker
+    color: white
 
 
 
@@ -682,7 +687,7 @@ div.sec2 h3,
 div.sec2 h4,
 div.sec2 h5,
 div.sec2 h6
-    color: sec2dark
+    color: white
 
 
 div.sec3 h1,
@@ -691,7 +696,7 @@ div.sec3 h3,
 div.sec3 h4,
 div.sec3 h5,
 div.sec3 h6
-    color: sec3dark
+    color: white
   
 
 div.sec4 h1,
@@ -700,7 +705,43 @@ div.sec4 h3,
 div.sec4 h4,
 div.sec4 h5,
 div.sec4 h6
-    color: sec4dark
+    color: white
+
+div.sec5 h1,
+div.sec5 h2,
+div.sec5 h3,
+div.sec5 h4,
+div.sec5 h5,
+div.sec5 h6
+    color: white
+
+div.sec6 h1,
+div.sec6 h2,
+div.sec6 h3,
+div.sec6 h4,
+div.sec6 h5,
+div.sec6 h6
+    color: white
+
+
+div.sec2 a.extLink:link, 
+div.sec2 a.extLink:visited
+    color: sec2darker
+    text-decoration: none
+
+div.sec3 a.extLink:link, 
+div.sec3 a.extLink:visited
+    color: sec3darker
+    text-decoration: none
+
+div.sec4 a.extLink:link, 
+div.sec4 a.extLink:visited
+    color: sec4darker
+    text-decoration: none
+
+
+
+
 
 @media mtrigger
     div.inpage-content .innerContent
