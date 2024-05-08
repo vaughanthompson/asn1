@@ -589,7 +589,7 @@ main.featurette article:last-child
 
 a.itemLink:link, a.itemLink:visited  
     transition: 0.35s
-    color: white
+    //color: white
     display: block
 @media (pointer: fine)
     a.itemLink:hover
@@ -659,15 +659,15 @@ div.insetContent.alt
 
 
 div.sec2
-    background-color: brand1
+    background-color: rgba(233,234,234,1.0)
 div.sec3
-    background-color: brand2
+    background-color: rgba(234,235,235,1.0)
 div.sec4
-    background-color: brand3
+    background-color: rgba(247,243,236,1.0)
 div.sec5
-    background-color: brand4
+    background-color: rgba(252,236,232,1.0)
 div.sec6
-    background-color: brand5
+    background-color: rgba(243,232,232,1.0)
 
 div.sec1 h1,
 div.sec1 h2,
@@ -687,7 +687,7 @@ div.sec2 h3,
 div.sec2 h4,
 div.sec2 h5,
 div.sec2 h6
-    color: white
+    color: brand1
 
 
 div.sec3 h1,
@@ -696,7 +696,7 @@ div.sec3 h3,
 div.sec3 h4,
 div.sec3 h5,
 div.sec3 h6
-    color: white
+    color: brand2
   
 
 div.sec4 h1,
@@ -705,7 +705,7 @@ div.sec4 h3,
 div.sec4 h4,
 div.sec4 h5,
 div.sec4 h6
-    color: white
+    color: brand3
 
 div.sec5 h1,
 div.sec5 h2,
@@ -713,7 +713,7 @@ div.sec5 h3,
 div.sec5 h4,
 div.sec5 h5,
 div.sec5 h6
-    color: white
+    color: brand4
 
 div.sec6 h1,
 div.sec6 h2,
@@ -721,8 +721,28 @@ div.sec6 h3,
 div.sec6 h4,
 div.sec6 h5,
 div.sec6 h6
-    color: white
+    color: brand5
 
+
+
+div.sec2 a.itemLink:link
+    color: brand1
+div.sec3 a.itemLink:link
+    color: brand1
+div.sec4 a.itemLink:link
+    color: brand1
+div.sec5 a.itemLink:link
+    color: brand1
+div.sec6 a.itemLink:link
+    color: brand1
+
+
+div.sec2 a.itemLink:hover,
+div.sec3 a.itemLink:hover,
+div.sec4 a.itemLink:hover,
+div.sec5 a.itemLink:hover,
+div.sec6 a.itemLink:hover
+    color: brand1 !important
 
 div.sec2 a.extLink:link, 
 div.sec2 a.extLink:visited
