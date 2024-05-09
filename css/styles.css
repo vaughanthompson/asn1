@@ -1153,12 +1153,12 @@ div.insetContent {
 }
 @media screen and (min-width: 1100px) {
   div.insetContent {
-    padding: 14vw 17.709999999999997vw 14vw 35vw;
+    padding: 14vw 17.709999999999997vw 14vw 17.709999999999997vw;
   }
 }
 @media screen and (min-width: 1100px) {
   div.insetContent.alt {
-    padding: 14vw 35vw 14vw 17.709999999999997vw;
+    padding: 14vw 17.709999999999997vw 14vw 17.709999999999997vw;
   }
 }
 @media screen and (min-width: 750px) {
@@ -1176,10 +1176,10 @@ div.insetContent {
     -o-box-orient: horizontal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-column-gap: 3vw;
     -moz-column-gap: 3vw;
     column-gap: 3vw;
@@ -1191,29 +1191,14 @@ div.insetContent {
     flex: 1 1 auto;
   }
   div.gridItems div.item {
-    -ms-flex-preferred-size: 44%;
-        flex-basis: 44%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 @media screen and (max-width: 1100px) {
   div.gridItems div.item {
     margin-bottom: 10vw;
   }
-}
-div.sec2 {
-  background-color: #e9eaea;
-}
-div.sec3 {
-  background-color: #eaebeb;
-}
-div.sec4 {
-  background-color: #f7f3ec;
-}
-div.sec5 {
-  background-color: #fcece8;
-}
-div.sec6 {
-  background-color: #f3e8e8;
 }
 div.sec1 h1,
 div.sec1 h2,
@@ -1247,7 +1232,7 @@ div.sec4 h3,
 div.sec4 h4,
 div.sec4 h5,
 div.sec4 h6 {
-  color: #d1b871;
+  color: #80a33b;
 }
 div.sec5 h1,
 div.sec5 h2,
