@@ -13,9 +13,27 @@
 
 
 // vars
-brand0 = rgba(115,166,183,1.0) //#
-brand1 = rgba(56,95,92,1.0) //#
-brand2 = rgba(94,101,107,1.0) //#
+brand0 = rgba(14,88,92,1.0) //#0e585c
+brand1 = rgba(0,175,80,1.0) //#00af50
+brand2 = rgba(39,43,40,1.0) //#272b28
+
+brand0Alpha90 = rgba(14,88,92,0.9)
+brand0Alpha50 = rgba(14,88,92,0.5)
+
+
+
+// bgs
+.bgWhite
+    background-color: white
+.brand0bg
+    background-color: brand0
+.brand0bgAlpha50
+    background-color: rgba(14,88,92,0.5)
+.brand0bgAlpha75
+    background-color: rgba(14,88,92,0.75)
+
+
+/*
 brand3 = rgb(128, 163, 59) //#
 brand4 = rgba(238,117,29,1.0) //#
 brand5 = rgba(178,42,46,1.0) //#
@@ -51,6 +69,7 @@ sec4darker = rgba(46,46,46,0.5)
 
 sec5base = rgba(245,189,171,0.8)
 sec6base = rgba(214,172,173,0.8)
+*/
 
 white = rgba(255,255,255,1.0)
 whiteAlp90 = rgba(255,255,255,0.9)
@@ -176,13 +195,13 @@ navSpacerL = 15vh
 html, body
     width: 100%
     height: 100%
-    font-family: 'Inter VF', 'Inter', fontStack
+    font-family: 'Satoshi-VR', fontStack
 body
     font-size: 16px
     // background: linear-gradient(top, white, brand1)
 body
-    background-color: brand0
-    color: brand1
+    background-color: white
+    color: brand2
 body > header.sticky
     background-color: brand0
 
@@ -194,4 +213,12 @@ hr
 
 .noPad
     padding: 0 !important
+.noPadTop
+    padding-top: 0 !important
+.noPadBottom
+    padding-bottom: 0 !important
+
+.centered
+    margin: 0px auto
+
 // blend modes

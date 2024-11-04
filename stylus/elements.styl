@@ -1,15 +1,39 @@
 // icons
 .icon
-    background-color: brand1
+    background-color: brand0
     color: white
     display: flex
     justify-content: center
     align-items: center
-    width: 45px
-    height: 45px
-    padding:0.2em
-    font-size: 1.1em
+    width: 50px
+    height: 50px
+    padding:0.15em
+    font-size: 1.5em
+    line-height: 1.5em
     border-radius: 50%
+.icon::before
+    line-height: 1em
+.icon.rev
+    background-color: white
+.icon.rev::before
+    color: brand0
+.icon.noBG.rev.bordered::before
+    color: brand1
+.icon.larger
+    width: 80px
+    height: 80px
+    font-size: 3.2em
+.icon.noBG
+    background: none
+.icon.bordered
+.icon.rev.noBG.bordered
+    border:2px solid brand0
+.icon.rev.bordered
+.icon.noBG.bordered
+    border:2px solid white
+
+
+
 .icon.alt
     background-color: brand2
 .ic-basic
@@ -206,7 +230,7 @@ header.sticky .imgText span.txtC
 
 
 picture.logoAsset
-    width:170px
+    width:100px
     height:auto
     
 
@@ -617,7 +641,7 @@ div.slideTextOverlay
 .lightSlider div.slideTextOverlay
     color: brand2
 .darkSlider div.slideTextOverlay
-    color: brand1
+    color: white
 
 @media mtrigger
     div.containSlider,
@@ -625,8 +649,8 @@ div.slideTextOverlay
         height: auto
         position: relative
         padding-bottom: padXL*2
-        background-blend-mode: multiply
-        background: linear-gradient(120deg, brand1, brand0) 
+        //background-blend-mode: multiply
+        //background: linear-gradient(120deg, brand1, brand0) 
         //background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
     div.containSlider
         //background-image: url(/images/bgs/default-m.jpg)
@@ -637,28 +661,31 @@ div.slideTextOverlay
 // match height of containSlider at all breakpoints
 
 
-
 div.openingTitle 
-    //margin-top: navSpacer
-    margin-left: marM
-    margin-right: marM
-    padding: 0 padL padM padL
-@media phoneRule
+    margin: 0 10vw 0 10vw
+    height: 80vh
+    //padding: padM padL padM padL
+/*@media phoneRule
     div.openingTitle 
         width: 75vw
         margin-left: 0
         margin-right: 0
-        margin-top: navHeightL
+        //margin-top: navHeightL
 @media ttrigger
     div.openingTitle 
         width: 65vw
         margin-left: 0
         margin-right: 0
-        margin-top: navHeightL
+        //margin-top: navHeightL
 @media lgdesktopRule
     div.openingTitle 
          width: 50vw
+*/
 
+
+div.openingTitle > div
+    margin: 10vh 10vw 10vh 10vw
+    height: 60vh
 
 
 div.parallaxMe
@@ -703,9 +730,9 @@ div.videoLayer > div
     //border:1px solid blue
     
 div.videoLayer > div.centerInFrame > video   
+    //width: 100%
     height: 100vh
-    width: auto
-    margin: 0px auto
+    //margin: 0px auto
 
 div.videoLayer > div.offsetBottom
     margin-top: 25vh
@@ -761,3 +788,199 @@ body.safari div.videoLayer video#bgvid5,
 body.safari div.videoLayer video#bgvid6,
 body.safari div.videoLayer video#bgvid7
     display: none
+
+
+
+
+
+/* home overlay styling */
+.insetBorder
+    box-shadow: inset 10vw 10vh 0 0 brand0Alpha90,
+    inset -10vw -10vh 0 0 brand0Alpha90
+.fashionFutures
+    position: absolute
+    bottom: 20vh
+    right:10vw
+    height:60vh
+    width:42vw 
+    background-image: url(/images/fashion-futures-cropped.png)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: 100% 50%
+    @media phoneRule
+        display: none
+
+div.fashionFuturesOpening
+    width: 60vw
+
+div.fashionFuturesOpening > *
+    max-width: 27vw
+div.fashionFuturesOpening p
+    margin-left: 15px
+
+/* centre border */
+div.centralSpine
+    margin: 0px auto
+    width: 100px
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    height:25vh
+    align-items: center
+    @media phoneRule
+        height:7vh
+div.centralSpineSmall
+    margin: 0px auto
+    width: 100px
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    height:7vh
+    align-items: center
+span.pipe 
+    display: block
+    width:2px
+    height:100%
+    align-self: center
+
+/* radial nav */
+div.radialNav
+    margin: 0px auto
+    width: 50vw
+    height: 30vw
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    justify-content: space-between
+    row-gap: 1vh
+    column-gap: 15vw
+    @media phoneRule
+        width: 90vw
+        height: 90vw
+
+div.radialNav > div
+    flex: 1 1 10vw
+    z-index: 2
+    display: flex
+    align-items: center
+    
+
+div.radialNav > div.copy
+    flex: 2 1 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding-left: padXL*1.8
+    padding-right: padXL*1.8
+    padding-top: padM
+    padding-bottom: padM
+    
+    
+div.radialNav > div.copy p
+    color: brand0
+    font-size: 1vw
+    line-height: 1.3vw
+    margin: 0
+    text-wrap: balance
+    @media phoneRule
+        font-size: 1.15em
+        line-height: 1.35em
+
+div.radialNav h3
+    margin-top:0.35em
+    @media phoneRule
+        display: none
+
+div.radialNav > div:nth-child(2) i,
+div.radialNav > div:nth-child(5) i
+    margin-right:0.35em
+
+div.radialNav > div:nth-child(1) i,
+div.radialNav > div:nth-child(4) i
+    margin-left:0.35em
+
+div.radialNav > div:nth-child(1),
+div.radialNav > div:nth-child(4)
+    justify-content: flex-end
+
+div.radialNav > div:nth-child(1),
+div.radialNav > div:nth-child(2),
+div.radialNav > div:nth-child(4),
+div.radialNav > div:nth-child(5)  
+    @media phoneRule
+        display: none
+
+div.radialNav span.radial
+    width 30vw
+    height: 30vw
+    left:10vw
+    display: block
+    position: absolute
+    border-radius: 50%
+    border: 2px solid brand0
+    z-index: 1
+    @media phoneRule
+        width 90vw
+        height: 90vw
+        left: 0
+
+
+
+div.outro
+    text-align: center
+    text-wrap: balance
+    @media dtrigger
+        width:30vw
+        margin: 0px auto
+        
+div.outro h6
+    font-weight: 400
+    margin: 2em 0
+
+div.outro img
+    width 90%
+    margin: 0px auto
+
+
+div.start
+    position: absolute
+    bottom: 0
+    height:19vh
+    width:60vw
+    text-align: center
+    @media phoneRule
+        width:70vw
+
+
+
+@media phoneRule
+    div.sec1
+        background-image: url(/images/misc/placehold-mob.jpg)
+        background-size: cover
+    div.sec1 div.fullH,
+    div.openingTitle
+        height:auto
+        min-height: 10vh
+    div.sec1 div.openingTitle div.brand0bgAlpha50
+        background: none
+    div.openingTitle > div
+        margin: 10vh 5vw 15vh 5vw
+        height: auto
+    .insetBorder
+        box-shadow: inset 5vh 5vh 0 0 brand0Alpha90,
+        inset -5vh -5vh 0 0 brand0Alpha90
+    div.fashionFuturesOpening
+        width: auto
+    div.fashionFuturesOpening > *
+        max-width: 100vw
+    div.fashionFuturesOpening p
+        margin-left: 0
+        text-align: center
+        font-size: 1.15em
+        margin-bottom: 1em
+    div.inpage-content .innerContent
+        padding: padXL*1.5
+        padding-top: padXL
+        padding-bottom: 0
+        text-align: center

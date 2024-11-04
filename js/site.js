@@ -26,7 +26,8 @@
             queue: false,
             hash: false,
             duration: 600,
-            easing: 'easeOutQuad'
+            easing: 'easeOutQuad',
+            offset: -250
     });
 
     // mobile top scroll

@@ -39,8 +39,8 @@ body footer
         display: none
     body > header > *,
     body > footer > *
-        margin-left: marStd*1.5
-        margin-right: marStd*1.5
+        margin-left: marStd*2
+        margin-right: marStd*2
 
 body > footer
     background-color: brand2
@@ -472,10 +472,10 @@ div#carouselIndicator > div:first-child > div:first-child
 #navHeader
     position: fixed
     z-index: 7000
-    background-color: whiteAlp90
-    border-bottom:1px solid halfDark
+    background-color: brand0
+    border-bottom:1px solid white
     width:100vw
-    padding-left: padM
+    padding-left: padL
     padding-right: padM 
     display: flex
     align-items: center
@@ -503,7 +503,7 @@ div.mblnavContainer
     overflow-y: auto
     /* Optional but highly reccomended: enables momentum scrolling on iOS */
     -webkit-overflow-scrolling: touch
-    background-color: white
+    background-color: brand0
 .open
     opacity: 1 !important
 div.containMNav
@@ -585,26 +585,39 @@ main.featurette article:last-child
 
 
 
-
+a.itemLink h5
+    color: brand1
+    transition: 0.35s
+    margin-bottom: 0.5em
 
 a.itemLink:link, a.itemLink:visited  
     transition: 0.35s
-    //color: white
+    color: brand2
     display: block
+a.itemLink:hover > *
+    color: brand0
 @media (pointer: fine)
     a.itemLink:hover
-        transform: scale(103%)
+        //transform: scale(102%)
+        transform: translateY(-10px)
+        
+
 
 a.itemLink span.thumbVid
     display: flex
     justify-content: center
     margin-bottom: marXS
-    padding: padM*1.25
+    //padding: padM*1.25
     background-size: cover
     background-repeat: no-repeat
+    height:10vw
+    box-shadow: inset 1.5vw 2vh 0 0 brand0Alpha50,
+    inset -1.5vw -2vh 0 0 brand0Alpha50
     @media phoneRule
         height: 50vw
         margin-bottom: marL
+        box-shadow: inset 3vh 2.5vh 0 0 brand0Alpha50,
+        inset -3vh -2.5vh 0 0 brand0Alpha50
     @media tabletRule
         height: 25vw
         margin-bottom: marM
@@ -623,7 +636,8 @@ a.itemLink span.thumbVid-large
     @media tabletRule
         height: 50vw
         margin-bottom: marM
-   
+
+
 
 a.itemLink span i 
     font-size:6em
@@ -639,24 +653,24 @@ div.insetContent
     position: relative;
     @media dtrigger
         //padding: padXL*2 padXL*2.53 padXL*2 padXL*5  
-        padding: padXL*2 padXL*2.53 padXL*2 padXL*2.53  
+        padding: padXL*2 padXL padXL*2 padXL
 div.insetContent.alt
     @media dtrigger
         //padding: padXL*2 padXL*5 padXL*2 padXL*2.53
         padding: padXL*2 padXL*2.53 padXL*2 padXL*2.53
 @media ttrigger
     div.gridItems
+        margin-top: marStd
         display: flex
         flex-wrap: wrap
         flex-direction: row
         //justify-content: space-between
-        justify-content: flex-start
-        column-gap: marM
+        justify-content: center
+        column-gap: marL
         row-gap: marM
-        flex: 1 1 auto
+        margin-bottom: marM
     div.gridItems div.item
-        //flex-basis: 44%
-        flex-basis: 30%
+        flex: 0 0 20%
 @media mtrigger
      div.gridItems div.item
         margin-bottom: marXL    
@@ -674,6 +688,8 @@ div.sec6
     background-color: rgba(243,232,232,1.0)
 */
 
+
+/*
 div.sec1 h1,
 div.sec1 h2,
 div.sec1 h3,
@@ -731,15 +747,15 @@ div.sec6 h6
 
 
 div.sec2 a.itemLink:link
-    color: brand1
+    color: brand2
 div.sec3 a.itemLink:link
-    color: brand1
+    color: brand2
 div.sec4 a.itemLink:link
-    color: brand1
+    color: brand2
 div.sec5 a.itemLink:link
-    color: brand1
+    color: brand2
 div.sec6 a.itemLink:link
-    color: brand1
+    color: brand2
 
 
 div.sec2 a.itemLink:hover,
@@ -747,7 +763,7 @@ div.sec3 a.itemLink:hover,
 div.sec4 a.itemLink:hover,
 div.sec5 a.itemLink:hover,
 div.sec6 a.itemLink:hover
-    color: brand1 !important
+    color: brand2 !important
 
 div.sec2 a.extLink:link, 
 div.sec2 a.extLink:visited
@@ -763,13 +779,16 @@ div.sec4 a.extLink:link,
 div.sec4 a.extLink:visited
     color: sec4darker
     text-decoration: none
-
+*/
 
 
 
 
 @media mtrigger
     div.inpage-content .innerContent
-        padding: 0 padXL*1.1 padXL*2 padXL*1.1
+        padding: padXL*1.1 padXL*2 padXL*1.1
         padding-top: navSpacer * 1.25
         text-align: center
+@media dtrigger
+    div.inpage-content .innerContent
+        padding-top: padStd

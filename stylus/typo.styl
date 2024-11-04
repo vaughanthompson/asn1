@@ -46,7 +46,7 @@ nav a:hover,
 p a:hover,
 li a:hover,
 *.picturefill-background a:hover
-    color: whiteAlp75 !important
+    //color: whiteAlp75 !important
     transition: 400ms
 .activeLink,
 nav a:hover
@@ -56,7 +56,7 @@ nav a:hover
 // nav typo
 nav > *
     font-weight:500 !important
-    font-size:0.9em !important
+    font-size:1.1em !important
     padding: 0 padXXS*1.25
 
 /* dark slider nav */    
@@ -119,9 +119,10 @@ h1
     font-size: 3.2em
     line-height: 105%
     letter-spacing: -0.02em
-    color: brand0
+    color: brand2
 h1 span
     font-weight: 300
+    color: brand1
 h2
     font-weight: 600
     font-size: 3.2em
@@ -129,7 +130,9 @@ h2
     letter-spacing: -0.05em
 h2 span
     font-weight: 300
-    letter-spacing: -0.05em    
+    letter-spacing: -0.05em  
+    color: brand1
+  
 h3
     font-weight: 600
     font-size: 2em
@@ -137,7 +140,8 @@ h3
     letter-spacing: -0.03em
 h3 span
     font-weight: 300
-    letter-spacing: -0.03em    
+    letter-spacing: -0.03em
+    color: brand1    
 h4
     font-weight: 600
     font-size: 1.7em
@@ -146,8 +150,8 @@ h4
 h4 span
     font-weight: 400    
 h5
-    font-weight: 400
-    font-size: 1.2em
+    font-weight: 600
+    font-size: 1.25em
     line-height: 125%
     //letter-spacing: -0.02em
 h5 span
@@ -161,7 +165,7 @@ h6
 p
     font-weight: 400
     font-size: 1em
-    line-height: 1.35em
+    line-height: 1.3em
     //letter-spacing: -0.025em
     margin-top: 0em
 strong 
@@ -175,8 +179,8 @@ strong
 
 
 // footer
-body > footer p a
-    font-size:1em
+body > footer
+    font-size:1.1em
     line-height: 160%    
 body > footer h6
     font-weight: 700
@@ -236,6 +240,12 @@ body > footer h6
 p.intro
     width auto
     @media dtrigger
-        width:80%
+        width 30vw
+        text-align: center
+        text-wrap: balance
+        margin: 0px auto
 
 
+.inpage-content .innerContent > h2
+    @media dtrigger
+        text-align: center
