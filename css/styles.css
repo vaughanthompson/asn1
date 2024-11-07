@@ -2331,7 +2331,7 @@ div.centralSpine {
 }
 @media screen and (max-width: 750px) {
   div.centralSpine {
-    height: 7vh;
+    height: 15vh;
   }
 }
 div.centralSpineSmall {
@@ -2355,6 +2355,11 @@ div.centralSpineSmall {
   -o-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+@media screen and (max-width: 750px) {
+  div.centralSpineSmall {
+    height: 15vh;
+  }
 }
 span.pipe {
   display: block;
@@ -2391,7 +2396,7 @@ div.radialNav {
 @media screen and (max-width: 750px) {
   div.radialNav {
     width: 90vw;
-    height: 90vw;
+    height: auto;
   }
 }
 div.radialNav > div {
@@ -2429,10 +2434,17 @@ div.radialNav > div.copy {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  text-wrap: balance;
   padding-left: 12.6vw;
   padding-right: 12.6vw;
   padding-top: 3vw;
   padding-bottom: 3vw;
+}
+@media screen and (max-width: 750px) {
+  div.radialNav > div.copy {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
 }
 div.radialNav > div.copy p {
   color: #0e585c;

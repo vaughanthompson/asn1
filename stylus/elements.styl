@@ -828,7 +828,7 @@ div.centralSpine
     height:25vh
     align-items: center
     @media phoneRule
-        height:7vh
+        height:15vh
 div.centralSpineSmall
     margin: 0px auto
     width: 100px
@@ -837,6 +837,8 @@ div.centralSpineSmall
     flex-wrap: nowrap
     height:7vh
     align-items: center
+    @media phoneRule
+        height:15vh
 span.pipe 
     display: block
     width:2px
@@ -856,7 +858,7 @@ div.radialNav
     column-gap: 15vw
     @media phoneRule
         width: 90vw
-        height: 90vw
+        height: auto
 
 div.radialNav > div
     flex: 1 1 10vw
@@ -871,10 +873,14 @@ div.radialNav > div.copy
     justify-content: center
     align-items: center
     text-align: center
+    text-wrap: balance
     padding-left: padXL*1.8
     padding-right: padXL*1.8
     padding-top: padM
     padding-bottom: padM
+    @media phoneRule
+        padding-left: padM
+        padding-right: padM
     
     
 div.radialNav > div.copy p
