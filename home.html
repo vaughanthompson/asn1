@@ -170,15 +170,15 @@
                 <article>
                     <div class="picturefill-background lighttext  lightSlider fullH" ><!-- multply lighten here-->
                         <div class="contentHdr fullH"><!-- gradient or straight bgoverlay here-->
-                            <div class="videoLayer top vid1" data-u-scale="2" data-u-speed="0.9">
+                            <div class="videoLayer vid1">
                                 <div class="centerInFrame">
-                                    <!-- 
+                                    
                                     <video id="bgvid1" class="hidden-xs theVideo" autoplay muted>
-                                        <source type="video/webm" data-src="/misc/emob1_1.webm" />
+                                        <source type="video/webm" data-src="/videos/loop-BW.webm" />
                                     </video>
                                     <video id="bgvidsafari1" class="hidden-xs theVideo" autoplay muted>
-                                        <source type="video/mp4" data-src="/misc/emob1_1.mp4">
-                                    </video>-->
+                                        <source type="video/mp4" data-src="/videos/loop-BW.mp4">
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -687,7 +687,7 @@
         handler: function(direction) {
             if (direction === 'down') {
                 bgv1.load();
-                $('.vid1').fadeTo(3500,'1.0');
+                $('.vid1').fadeTo(5500,'1.0');
 
             }
             else {
