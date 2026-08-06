@@ -2318,7 +2318,6 @@ div.slideTextOverlay {
     position: relative;
     padding-bottom: 14vw;
     background-blend-mode: multiply;
-    background: linear-gradient(120deg, #2a2e31, #1099d6);
   }
   div.containSlider {
     background-repeat: no-repeat;
@@ -2333,7 +2332,7 @@ div.openingTitle {
 }
 @media screen and (max-width: 750px) {
   div.openingTitle {
-    width: 75vw;
+    width: 90%;
     margin-left: 0;
     margin-right: 0;
     margin-top: 11vh;
@@ -2970,7 +2969,7 @@ html {
 }
 .gradient2 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.1));
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.25));
 }
 .gradient3 {
   background-blend-mode: multiply;
