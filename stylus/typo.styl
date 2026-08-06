@@ -2,6 +2,7 @@
 a:link, a:visited
     color: brand1
     text-decoration: none
+    text-transform: uppercase
 p a:link,
 p a:visited,
 li a:link,
@@ -46,7 +47,7 @@ nav a:hover,
 p a:hover,
 li a:hover,
 *.picturefill-background a:hover
-    //color: whiteAlp75 !important
+    color: whiteAlp75 !important
     transition: 400ms
 .activeLink,
 nav a:hover
@@ -55,17 +56,17 @@ nav a:hover
 
 // nav typo
 nav > *
-    font-weight:500 !important
-    font-size:1.1em !important
+    font-weight:700 !important
+    font-size:1em !important
     padding: 0 padXXS*1.25
 
 /* dark slider nav */    
 body.darkSlider > header.fixed .siteLogo span,
 body.darkSlider > header.fixed nav a.activeLink
-    color: white !important
+    color: brand0 !important
 body.darkSlider > header.fixed nav a,
 body.darkSlider > header.fixed nav a.ctaButton
-    color: white !important
+    color: brand1 !important
     border-color: white !important
 body.darkSlider > header.fixed nav a:hover
     color: brand1 !important
@@ -89,8 +90,8 @@ body.darkTheme > header.sticky nav a.activeLink
     color: brand2 !important
 body.darkTheme > header.sticky nav a,
 body.darkTheme > header.sticky nav a.ctaButton
-    color: white !important
-    border-color: white !important    
+    color: brand1 !important
+    border-color: brand1 !important    
 body.darkTheme > header.sticky nav a:hover
     color: brand1 !important
     border-color: brand1 !important
@@ -119,10 +120,9 @@ h1
     font-size: 3.2em
     line-height: 105%
     letter-spacing: -0.02em
-    color: brand2
+    color: brand0
 h1 span
     font-weight: 300
-    color: brand1
 h2
     font-weight: 600
     font-size: 3.2em
@@ -130,9 +130,7 @@ h2
     letter-spacing: -0.05em
 h2 span
     font-weight: 300
-    letter-spacing: -0.05em  
-    color: brand1
-  
+    letter-spacing: -0.05em    
 h3
     font-weight: 600
     font-size: 2em
@@ -140,8 +138,7 @@ h3
     letter-spacing: -0.03em
 h3 span
     font-weight: 300
-    letter-spacing: -0.03em
-    color: brand1    
+    letter-spacing: -0.03em    
 h4
     font-weight: 600
     font-size: 1.7em
@@ -150,8 +147,8 @@ h4
 h4 span
     font-weight: 400    
 h5
-    font-weight: 600
-    font-size: 1.25em
+    font-weight: 400
+    font-size: 1.2em
     line-height: 125%
     //letter-spacing: -0.02em
 h5 span
@@ -165,7 +162,7 @@ h6
 p
     font-weight: 400
     font-size: 1em
-    line-height: 1.3em
+    line-height: 1.35em
     //letter-spacing: -0.025em
     margin-top: 0em
 strong 
@@ -179,8 +176,8 @@ strong
 
 
 // footer
-body > footer
-    font-size:1.1em
+body > footer p a
+    font-size:1em
     line-height: 160%    
 body > footer h6
     font-weight: 700
@@ -240,12 +237,6 @@ body > footer h6
 p.intro
     width auto
     @media dtrigger
-        width 30vw
-        text-align: center
-        text-wrap: balance
-        margin: 0px auto
+        width:80%
 
 
-.inpage-content .innerContent > h2
-    @media dtrigger
-        text-align: center

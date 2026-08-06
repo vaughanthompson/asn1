@@ -30,7 +30,8 @@ body footer
         //min-height: navHeightL
         position: absolute
         z-index: 2000
-        border-bottom: 1px solid white;
+        background-color: white
+        border-bottom: 1px solid halfDark;
     body > header.sticky
         min-height: navHeight
         position: fixed
@@ -39,11 +40,11 @@ body footer
         display: none
     body > header > *,
     body > footer > *
-        margin-left: marStd*2
-        margin-right: marStd*2
+        margin-left: marStd*1.5
+        margin-right: marStd*1.5
 
 body > footer
-    background-color: brand2
+    background-color: brand1
     color: white
     padding-top: padL
     padding-bottom: padL
@@ -472,10 +473,10 @@ div#carouselIndicator > div:first-child > div:first-child
 #navHeader
     position: fixed
     z-index: 7000
-    background-color: brand0
-    border-bottom:1px solid white
+    background-color: whiteAlp90
+    border-bottom:1px solid halfDark
     width:100vw
-    padding-left: padL
+    padding-left: padM
     padding-right: padM 
     display: flex
     align-items: center
@@ -503,7 +504,7 @@ div.mblnavContainer
     overflow-y: auto
     /* Optional but highly reccomended: enables momentum scrolling on iOS */
     -webkit-overflow-scrolling: touch
-    background-color: brand0
+    background-color: white
 .open
     opacity: 1 !important
 div.containMNav
@@ -585,39 +586,26 @@ main.featurette article:last-child
 
 
 
-a.itemLink h5
-    color: brand1
-    transition: 0.35s
-    margin-bottom: 0.5em
+
 
 a.itemLink:link, a.itemLink:visited  
     transition: 0.35s
-    color: brand2
+    //color: white
     display: block
-a.itemLink:hover > *
-    color: brand0
 @media (pointer: fine)
     a.itemLink:hover
-        //transform: scale(102%)
-        transform: translateY(-10px)
-        
-
+        transform: scale(103%)
 
 a.itemLink span.thumbVid
     display: flex
     justify-content: center
     margin-bottom: marXS
-    //padding: padM*1.25
+    padding: padM*1.25
     background-size: cover
     background-repeat: no-repeat
-    height:10vw
-    box-shadow: inset 1.5vw 2vh 0 0 brand0Alpha50,
-    inset -1.5vw -2vh 0 0 brand0Alpha50
     @media phoneRule
         height: 50vw
         margin-bottom: marL
-        box-shadow: inset 3vh 2.5vh 0 0 brand0Alpha50,
-        inset -3vh -2.5vh 0 0 brand0Alpha50
     @media tabletRule
         height: 25vw
         margin-bottom: marM
@@ -636,8 +624,7 @@ a.itemLink span.thumbVid-large
     @media tabletRule
         height: 50vw
         margin-bottom: marM
-
-
+   
 
 a.itemLink span i 
     font-size:6em
@@ -653,24 +640,24 @@ div.insetContent
     position: relative;
     @media dtrigger
         //padding: padXL*2 padXL*2.53 padXL*2 padXL*5  
-        padding: padXL*2 padXL padXL*2 padXL
+        padding: padXL*2 padXL*2.53 padXL*2 padXL*2.53  
 div.insetContent.alt
     @media dtrigger
         //padding: padXL*2 padXL*5 padXL*2 padXL*2.53
         padding: padXL*2 padXL*2.53 padXL*2 padXL*2.53
 @media ttrigger
     div.gridItems
-        margin-top: marStd
         display: flex
         flex-wrap: wrap
         flex-direction: row
         //justify-content: space-between
-        justify-content: center
-        column-gap: marL
+        justify-content: flex-start
+        column-gap: marM
         row-gap: marM
-        margin-bottom: marM
+        flex: 1 1 auto
     div.gridItems div.item
-        flex: 0 0 20%
+        //flex-basis: 44%
+        flex-basis: 30%
 @media mtrigger
      div.gridItems div.item
         margin-bottom: marXL    
@@ -688,8 +675,6 @@ div.sec6
     background-color: rgba(243,232,232,1.0)
 */
 
-
-/*
 div.sec1 h1,
 div.sec1 h2,
 div.sec1 h3,
@@ -747,15 +732,15 @@ div.sec6 h6
 
 
 div.sec2 a.itemLink:link
-    color: brand2
+    color: brand1
 div.sec3 a.itemLink:link
-    color: brand2
+    color: brand1
 div.sec4 a.itemLink:link
-    color: brand2
+    color: brand1
 div.sec5 a.itemLink:link
-    color: brand2
+    color: brand1
 div.sec6 a.itemLink:link
-    color: brand2
+    color: brand1
 
 
 div.sec2 a.itemLink:hover,
@@ -763,7 +748,7 @@ div.sec3 a.itemLink:hover,
 div.sec4 a.itemLink:hover,
 div.sec5 a.itemLink:hover,
 div.sec6 a.itemLink:hover
-    color: brand2 !important
+    color: brand1 !important
 
 div.sec2 a.extLink:link, 
 div.sec2 a.extLink:visited
@@ -779,16 +764,13 @@ div.sec4 a.extLink:link,
 div.sec4 a.extLink:visited
     color: sec4darker
     text-decoration: none
-*/
+
 
 
 
 
 @media mtrigger
     div.inpage-content .innerContent
-        padding: padXL*1.1 padXL*2 padXL*1.1
+        padding: 0 padXL*1.1 padXL*2 padXL*1.1
         padding-top: navSpacer * 1.25
         text-align: center
-@media dtrigger
-    div.inpage-content .innerContent
-        padding-top: padStd
