@@ -195,6 +195,18 @@
 *
 *
 */
+div.sec1 {
+  background-color: #1099d6;
+}
+div.sec2 {
+  background-color: #5f66af;
+}
+div.sec3 {
+  background-color: #e76426;
+}
+div.sec4 {
+  background-color: #9acd74;
+}
 html,
 body {
   width: 100%;
@@ -205,7 +217,7 @@ body {
   font-size: 16px;
 }
 body {
-  background-color: #1099d6;
+  background-color: #fff;
   color: #2a2e31;
 }
 body > header.sticky {
@@ -1349,7 +1361,7 @@ div.sec2 h3,
 div.sec2 h4,
 div.sec2 h5,
 div.sec2 h6 {
-  color: #2a2e31;
+  color: #fff;
 }
 div.sec3 h1,
 div.sec3 h2,
@@ -1357,7 +1369,7 @@ div.sec3 h3,
 div.sec3 h4,
 div.sec3 h5,
 div.sec3 h6 {
-  color: #e1272c;
+  color: #fff;
 }
 div.sec4 h1,
 div.sec4 h2,
@@ -1365,7 +1377,7 @@ div.sec4 h3,
 div.sec4 h4,
 div.sec4 h5,
 div.sec4 h6 {
-  color: #5f66af;
+  color: #fff;
 }
 div.sec5 h1,
 div.sec5 h2,
@@ -1373,7 +1385,7 @@ div.sec5 h3,
 div.sec5 h4,
 div.sec5 h5,
 div.sec5 h6 {
-  color: #e76426;
+  color: #fff;
 }
 div.sec6 h1,
 div.sec6 h2,
@@ -1381,7 +1393,7 @@ div.sec6 h3,
 div.sec6 h4,
 div.sec6 h5,
 div.sec6 h6 {
-  color: #9acd74;
+  color: #fff;
 }
 div.sec2 a.itemLink:link {
   color: #2a2e31;
@@ -2332,7 +2344,7 @@ div.openingTitle {
     width: 65vw;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 11vh;
+    margin-top: 13.75vh;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -2448,7 +2460,6 @@ a:link,
 a:visited {
   color: #2a2e31;
   text-decoration: none;
-  text-transform: uppercase;
 }
 p a:link,
 p a:visited,
@@ -2503,14 +2514,10 @@ nav > * {
   font-weight: 700 !important;
   font-size: 1em !important;
   padding: 0 1vw;
-}
-body.darkSlider > header.fixed .siteLogo span,
-body.darkSlider > header.fixed nav a.activeLink {
-  color: #1099d6 !important;
+  text-transform: uppercase;
 }
 body.darkSlider > header.fixed nav a,
 body.darkSlider > header.fixed nav a.ctaButton {
-  color: #2a2e31 !important;
   border-color: #fff !important;
 }
 body.darkSlider > header.fixed nav a:hover {
@@ -2530,13 +2537,8 @@ body.lightSlider > header.fixed nav a:hover {
   color: #e1272c !important;
   border-color: #2a2e31 !important;
 }
-body.darkTheme > header.sticky .siteLogo span,
-body.darkTheme > header.sticky nav a.activeLink {
-  color: #e1272c !important;
-}
 body.darkTheme > header.sticky nav a,
 body.darkTheme > header.sticky nav a.ctaButton {
-  color: #2a2e31 !important;
   border-color: #2a2e31 !important;
 }
 body.darkTheme > header.sticky nav a:hover {
@@ -2569,8 +2571,9 @@ h1 {
   font-weight: 700;
   font-size: 3.2em;
   line-height: 105%;
-  letter-spacing: -0.02em;
-  color: #1099d6;
+  letter-spacing: 0;
+  color: #fff;
+  text-transform: uppercase;
 }
 h1 span {
   font-weight: 300;
@@ -2579,7 +2582,9 @@ h2 {
   font-weight: 600;
   font-size: 3.2em;
   line-height: 105%;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
+  color: #fff;
+  text-transform: uppercase;
 }
 h2 span {
   font-weight: 300;
@@ -2587,13 +2592,12 @@ h2 span {
 }
 h3 {
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 115%;
-  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 h3 span {
   font-weight: 300;
-  letter-spacing: -0.03em;
 }
 h4 {
   font-weight: 600;
@@ -2618,9 +2622,11 @@ h6 {
 }
 p {
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.35em;
+  font-size: 1.1em;
+  line-height: 1.2em;
   margin-top: 0em;
+  text-wrap: balance;
+  color: #fff;
 }
 strong {
   font-weight: 800;
@@ -2698,7 +2704,20 @@ p.intro {
 @media screen and (min-width: 1100px) {
   p.intro {
     width: 80%;
+    margin: 0px auto;
   }
+}
+header nav a:first-child {
+  color: #5f66af;
+}
+header nav a:nth-child(2) {
+  color: #e76426;
+}
+header nav a:nth-child(3) {
+  color: #9acd74;
+}
+.sec1 a {
+  font-size: 1.2em;
 }
 
 input:focus {outline:none;}
@@ -2951,7 +2970,7 @@ html {
 }
 .gradient2 {
   background-blend-mode: multiply;
-  background: radial-gradient(circle at center, #1099d6 50%, rgba(0,0,0,0.25));
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.1));
 }
 .gradient3 {
   background-blend-mode: multiply;
@@ -2974,8 +2993,8 @@ html {
 }
 .gradientsec2 {
   background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, right bottom, from(#fff), to(#aeb6b6));
-  background: linear-gradient(to bottom right, #fff, #aeb6b6);
+  background: -webkit-gradient(linear, left top, right bottom, from(#e1272c), to(#e1272c));
+  background: linear-gradient(to bottom right, #e1272c, #e1272c);
 }
 .gradientsec3 {
   background-blend-mode: multiply;

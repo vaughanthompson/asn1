@@ -2,7 +2,6 @@
 a:link, a:visited
     color: brand1
     text-decoration: none
-    text-transform: uppercase
 p a:link,
 p a:visited,
 li a:link,
@@ -59,14 +58,16 @@ nav > *
     font-weight:700 !important
     font-size:1em !important
     padding: 0 padXXS*1.25
+    text-transform: uppercase
+
 
 /* dark slider nav */    
 body.darkSlider > header.fixed .siteLogo span,
 body.darkSlider > header.fixed nav a.activeLink
-    color: brand0 !important
+    // color: brand0 !important
 body.darkSlider > header.fixed nav a,
 body.darkSlider > header.fixed nav a.ctaButton
-    color: brand1 !important
+    // color: brand1 !important
     border-color: white !important
 body.darkSlider > header.fixed nav a:hover
     color: brand1 !important
@@ -87,10 +88,10 @@ body.lightSlider > header.fixed nav a:hover
 /* dark theme navs */ 
 body.darkTheme > header.sticky .siteLogo span,
 body.darkTheme > header.sticky nav a.activeLink
-    color: brand2 !important
+    //color: brand2 
 body.darkTheme > header.sticky nav a,
 body.darkTheme > header.sticky nav a.ctaButton
-    color: brand1 !important
+    //color: brand1
     border-color: brand1 !important    
 body.darkTheme > header.sticky nav a:hover
     color: brand1 !important
@@ -119,26 +120,30 @@ h1
     font-weight: 700
     font-size: 3.2em
     line-height: 105%
-    letter-spacing: -0.02em
-    color: brand0
+    letter-spacing: 0
+    color: white
+    text-transform: uppercase
+
 h1 span
     font-weight: 300
 h2
     font-weight: 600
     font-size: 3.2em
     line-height: 105%
-    letter-spacing: -0.05em
+    letter-spacing: 0
+    color: white
+    text-transform: uppercase
 h2 span
     font-weight: 300
     letter-spacing: -0.05em    
 h3
     font-weight: 600
-    font-size: 2em
+    font-size: 1.8em
     line-height: 115%
-    letter-spacing: -0.03em
+    text-transform: uppercase
+
 h3 span
     font-weight: 300
-    letter-spacing: -0.03em    
 h4
     font-weight: 600
     font-size: 1.7em
@@ -161,10 +166,12 @@ h6
     //letter-spacing: -0.015em
 p
     font-weight: 400
-    font-size: 1em
-    line-height: 1.35em
+    font-size: 1.1em
+    line-height: 1.2em
     //letter-spacing: -0.025em
     margin-top: 0em
+    text-wrap: balance
+    color: white
 strong 
     font-weight: 800
     //letter-spacing: -0.015em
@@ -238,5 +245,18 @@ p.intro
     width auto
     @media dtrigger
         width:80%
+        margin: 0px auto
 
 
+
+
+
+header nav a:first-child
+    color: brand3 
+header nav a:nth-child(2)
+    color: brand4 
+header nav a:nth-child(3)
+    color: brand5 
+
+.sec1 a
+    font-size: 1.2em
